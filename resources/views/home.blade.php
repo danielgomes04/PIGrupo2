@@ -57,8 +57,6 @@
 
 </body>
 
-@yield('content')
-
 <footer > 
         <div class="text-center">
             <nav> 

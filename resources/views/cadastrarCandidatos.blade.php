@@ -20,40 +20,38 @@
   <h1>Tela de Cadastro</h1>
 </div>
 
-<div class="container cadastroCandidatos">
+<div class="container cadastroBones">
 <form class="row g-3" method="post" action="{{route('salvar-banco-candidatos')}}">
   @csrf
-
   <div class="col-md-12">
-    <label for="inputNome" class="form-label">Nome</label>
-    <input type="text" name="nome" value="{{old('nome')}}" class="form-control" id="inputNome" placeholder="Nome">
+    <label for="inputModelo" class="form-label">Nome</label>
+    <input type="text" name="nome" value="{{old('nome')}}" class="form-control" id="inputModelo" placeholder="Insira seu nome">
+
     @error('nome')
-    <div class="fw-bolder">*Preencher o campo nome.</div>
+    <div class="fw-bolder">*Preencher o campo nome </div>
     @enderror('nome') 
   </div>
   
   <div class="col-12">
-    <label for="inputE-mail" class="form-label">E-mail</label>
-    <input type="text" name="e-mail" value="{{old('e-mail')}}" class="form-control" id="inputE-mail" placeholder="E-mail">
+    <label for="inputMarca" class="form-label">Seu e-mail</label>
+    <input type="text" name="email" value="{{old('email')}}" class="form-control" id="inputMarca" placeholder="Insira seu e-mail">
     @error('email')
     <div class="fw-bolder">*Preencher o campo e-mail. </div>
     @enderror('email')  
   </div>
-
   <div class="col-12">
-    <label for="inputDataDeNascimento" class="form-label">Data de Nascimento</label>
-    <input type="text" name="DataDeNascimento" value="{{old('DataDeNascimento')}}" class="form-control" id="inputDataDeNascimento" placeholder="DD/MM/AAAA">
+    <label for="inputMarca" class="form-label">Data de Nascimento</label>
+    <input type="text" name="DataDeNascimento" value="{{old('DataDeNascimento')}}" class="form-control" id="inputMarca" placeholder="DD/MM/AAAA">
     @error('DataDeNascimento')
     <div class="fw-bolder">*Preencher o campo Data de Nascimento. </div>
     @enderror('DataDeNascimento')  
   </div>
-  
   <div class="col-12">
-    <label for="inputTelefone" class="form-label">Telefone</label>
-    <input type="text" name="Telefone" value="{{old('Telefone')}}" class="form-control" id="inputTelefone" placeholder="(00)000000-0000">
-    @error('Telefone')
+    <label for="inputAno" class="form-label">Telefone</label>
+    <input type="text" name="telefone" value="{{old('telefone')}}" class="form-control" id="inputAno" placeholder="Telefone">
+    @error('telefone')
     <div class="fw-bolder">*Preencher o campo Telefone. </div>
-    @enderror('Telefone')  
+    @enderror('telefone')  
   </div>
   
   <div class="col-12">
