@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CandidatosController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,3 +19,5 @@ use App\Http\Controllers\HomeController;
 Route::get('/home',[HomeController::class,'MostrarHome'])->name('home');
 Route::get('/cadastrarCandidatos',[CandidatosController::class,'cadastroCandidatos'])->name('cadastro-candidatos');
 Route::post('/cadastrarCandidatos',[CandidatosController::class,'SalvarBancoCandidatos'])->name('salvar-banco-candidatos');
+Route::put('/editarCandidatos',[CamisasController::class,'MostrarEditarCandidatos'])->name('mostrar-editar-candidatos');
+Route::get('/login',[LoginController::class,'VerLogin'])->name('login');
